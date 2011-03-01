@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="colorclockstyle.css" media="screen" title="Default" />
+    
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script>
+    <script type="text/javascript"
+            src="jquery.color.min.js"></script>        
+    <script type="text/javascript"
+            src="colorclock.min.js"></script>        
+</head>
+<body>
+    <div id="container">
+        <div id="title">
+            <span id="font-controls"><span class="decreaseFont" title="Decrease Clock Font Size"><a href="#">-</a></span>&nbsp;&nbsp;<span class="increaseFont"><a href="#" title="Increase Clock Font Size">+</a></span>&nbsp;&nbsp;<span class="resetFont"><a href="#" title="Reset Clock Font Size">#</a></span></span>
+            <span id="clk">THE COLOUR CLOCK.</span><br />
+            <span id="exp">REPRESENTING TIME AS A HEXADECIMAL COLOUR VALUE.</span>
+        </div>
+        
+        <div id="display">
+            <div id="am"><span class="hr">00:00:00</span></div>
+            <div><span id="timeval"></span></div>
+            <div><span id="hexval"></span></div>
+            <div id="pm"><span class="hr">00:00:00</span></div>
+            <div id="toggle_container">
+                <span class="toggler on" id="toggletime">000.</span><span class="toggler" id="togglehex">000.</span>
+            </div>
+        </div>
+    </div>
+    <div id="credits"><span><span><a href="http://thecolourclock.co.uk/">THE COLOUR CLOCK</a> BY <a href="http://www.lookatjack.com/">Jack.</a></span><span id="port">HTML/JAVASCRIPT VERSION BY <a href="http://nogoodatcoding.com"><img src="ngac.png" alt="no.good.at.coding" title="no.good.at.coding" /></a></span></span></div>
+</body>
+</html>
