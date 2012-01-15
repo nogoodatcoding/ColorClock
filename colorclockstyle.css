@@ -146,3 +146,11 @@ a:active {
     float: right;
     padding-bottom: 2px;
 }
+
+#port a 
+{
+    display: inline-block;
+	height: 20px;
+	position: relative;
+	top: 3px;
+}
