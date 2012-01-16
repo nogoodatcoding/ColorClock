@@ -61,7 +61,9 @@ a:active {
 }
 
 #font-controls {
-    float: right;
+    position: absolute;
+	right: 0px;
+	padding-right: 10px;
     font-size: 2.5em;
     font-weight: bolder;
 }
@@ -93,9 +95,11 @@ a:active {
 
 #timeval, #hexval{
     text-align: center;
+    display: inline-block;
+    width: 100%;
 }
 
-#am, #pm {
+#bar {
     overflow: hidden;
     height: 2px;
 }
@@ -115,24 +119,38 @@ a:active {
     overflow: hidden;
     height: 15px;
     position: relative;
-    margin-top: 10px;
-    width: auto;
+    margin: 10px auto;
+    width: 4.825em;
 }
 
 .toggler {
     cursor:pointer;
     background-color: #fff;
     border: 1px solid #fff;
-    height: 2px;
-    margin: 1px 15px;
+    height: 15px;
+    margin: 1px 0.05em;
     opacity: 0.6;
     overflow: hidden;
     text-decoration: none;
     text-shadow: none;
+    display: inline-block;
+    width: 2.25em;
+    position: absolute;
+    top: 0;
 }
 
 .toggler.on {
     opacity: 0.9;
+}
+
+#toggletime
+{
+    left: 0;
+}
+
+#togglehex
+{
+    right: 0;
 }
 
 #credits {
@@ -149,7 +167,7 @@ a:active {
 
 #port a 
 {
-    display: inline-block;
+	display: inline-block;
 	height: 20px;
 	position: relative;
 	top: 3px;
